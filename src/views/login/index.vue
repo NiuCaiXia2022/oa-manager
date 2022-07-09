@@ -18,6 +18,10 @@
 </template>
 <script setup>
 import { reactive, ref } from 'vue'
+import { useStore } from 'vuex'
+import { useRouter } from 'vue-router'
+const router = useRouter()
+const store = useStore()
 // 表单
 const userLoginForm = reactive({
   userName: 'admin',
@@ -28,6 +32,7 @@ const userLoginForm = reactive({
 
 // 表单效验
 const loginFormRef = ref('ref')
+// 验证规则
 const rules = reactive({
   userName: [{ required: true, message: '用户名不能为空', trigger: 'blur' }],
   userPwd: [{ required: true, message: '密码不能为空', trigger: 'blur' }]
@@ -38,7 +43,11 @@ const handleClickSunmit = async () => {
   if (!loginFormRef.value) return
   await loginFormRef.value.validate(async (valid) => {
     if (valid) {
-      console.log('submit!')
+      // console.log('userLoginForm登录', userLoginForm)
+      await store.dispatch('user/getLogin', userLoginForm)
+      await store.dispatch('user/getPermissionList')
+      // console.log('登录res', presponse)
+      router.push('/')
     } else {
       console.log('error submit!')
     }
