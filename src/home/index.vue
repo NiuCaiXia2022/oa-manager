@@ -7,8 +7,10 @@
           <Aside></Aside>
         </el-aside>
         <el-container>
-          <el-header>Header</el-header>
-          <el-main>Main</el-main>
+          <el-header> <Header></Header> </el-header>
+          <el-main>
+            <Main></Main>
+          </el-main>
         </el-container>
       </el-container>
     </div>
@@ -16,42 +18,26 @@
 </template>
 <script setup>
 import Aside from './modules/aside'
+import Header from './modules/header'
+import Main from './modules/main'
 </script>
 <style lang="scss" scoped>
 .home {
-  width: 100v;
+  width: 100vw;
   height: 100vh;
-  position: relative;
-
-  .el-aside {
-    height: 100vh;
-    position: fixed;
-    width: 200px;
-    background-color: #001529;
-    overflow-y: auto;
-  }
 
   .el-header {
-    height: 50px;
-    // background-color: #fff;
-    background-color: rgb(176, 31, 147);
-    padding: 0 20px;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    right: 0;
-    z-index: 9999;
-    left: 200px;
+    background-color: #fff;
   }
 
-  .el-main {
-    // background: #eef0f3;
-    background-color: rgb(17, 162, 169);
-    height: 100%;
-    padding: 20px;
-    padding-top: 71px;
+  .el-aside {
+    background-color: #001529;
+    height: 100vh;
+    border: none;
   }
+}
+
+.el-menu {
+  border-right: none;
 }
 </style>

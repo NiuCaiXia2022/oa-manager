@@ -12,7 +12,7 @@ instance.interceptors.request.use(function (config) {
   // console.log('请求拦截器', config)
 
   const token = store.getters.token
-  console.log('请求拦截器', token)
+  // console.log('请求拦截器', token)
   // 发送 token
   if (token) {
     config.headers.Authorization = 'Bearer ' + token
@@ -37,7 +37,7 @@ instance.interceptors.response.use(function (response) {
   // }
 
   // 解构 token
-  const { data } = response.data
+  const { data } = response
   // console.log('响应拦截器', data)
   if (data) {
     return data

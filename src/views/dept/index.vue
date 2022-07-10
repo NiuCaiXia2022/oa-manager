@@ -1,7 +1,5 @@
 <template>
-  <div class="main-box">
-    <router-view></router-view>
-  </div>
+  <div>部门管理</div>
 </template>
 <script setup></script>
 <style lang="scss" scoped></style>
