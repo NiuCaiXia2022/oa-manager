@@ -15,8 +15,7 @@ const routes = [
         path: '/welcome', // 欢迎页面
         name: 'welcome',
         meta: {
-          title: '欢迎体验Vue3全栈课程',
-          icon: 'el-icon-s-home'
+          title: '欢迎体验Vue3全栈课程'
         },
         component: () => import('../views/welcome')
       },
@@ -24,8 +23,7 @@ const routes = [
         path: '/system/user', // 用户管理
         name: 'user',
         meta: {
-          title: '用户管理',
-          icon: 'el-icon-s-home'
+          title: '用户管理'
         },
         component: () => import('../views/user')
       },
@@ -33,8 +31,7 @@ const routes = [
         path: '/system/menu', // 菜单管理
         name: 'menu',
         meta: {
-          title: '菜单管理',
-          icon: 'el-icon-s-home'
+          title: '菜单管理'
         },
         component: () => import('../views/menu')
       },
@@ -42,8 +39,7 @@ const routes = [
         path: '/system/role', // 角色管理
         name: 'role',
         meta: {
-          title: '角色管理',
-          icon: 'el-icon-s-home'
+          title: '角色管理'
         },
         component: () => import('../views/role')
       },
@@ -51,8 +47,7 @@ const routes = [
         path: '/system/user', // 用户管理
         name: 'user',
         meta: {
-          title: '用户管理',
-          icon: 'el-icon-s-home'
+          title: '用户管理'
         },
         component: () => import('../views/user')
       },
@@ -60,8 +55,7 @@ const routes = [
         path: '/system/dept', // 部门管理
         name: 'dept',
         meta: {
-          title: '部门管理',
-          icon: 'el-icon-s-home'
+          title: '部门管理'
         },
         component: () => import('../views/dept')
       },
@@ -69,8 +63,7 @@ const routes = [
         path: '/system/staff', // 员工管理
         name: '/staff',
         meta: {
-          title: '员工管理',
-          icon: 'el-icon-s-home'
+          title: '员工管理'
         },
         component: () => import('../views/staff')
       },
@@ -78,8 +71,7 @@ const routes = [
         path: '/system/salary', // 薪酬管理
         name: 'approve',
         meta: {
-          title: '薪酬管理',
-          icon: 'el-icon-s-home'
+          title: '薪酬管理'
         },
         component: () => import('../views/salary')
       },
@@ -87,8 +79,7 @@ const routes = [
         path: '/audit/leave', // 休假管理
         name: 'leave',
         meta: {
-          title: '休假管理',
-          icon: 'el-icon-s-home'
+          title: '休假管理'
         },
         component: () => import('../views/leave')
       },
@@ -96,8 +87,7 @@ const routes = [
         path: '/audit/approve', // 待审批
         name: 'approve',
         meta: {
-          title: '待审批',
-          icon: 'el-icon-s-home'
+          title: '待审批'
         },
         component: () => import('../views/approve')
       }

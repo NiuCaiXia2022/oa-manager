@@ -1,6 +1,6 @@
 //  /staff
 //  员工管理
-import home from '../../home'
+// import home from '../../home'
 
 export default {
   path: '/',
@@ -8,7 +8,7 @@ export default {
   meta: {
     title: '欢迎页面'
   },
-  component: home,
+  component: () => import('../../home'),
   children: [
     {
       path: '/system/user',

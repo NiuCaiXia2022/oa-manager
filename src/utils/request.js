@@ -38,7 +38,8 @@ instance.interceptors.response.use(function (response) {
 
   // 解构 token
   const { data } = response
-  // console.log('响应拦截器', data)
+  console.log('响应拦截器', data)
+  console.log('响应拦截器', data.data.actionList)
   if (data) {
     return data
   }
